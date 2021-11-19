@@ -55,7 +55,7 @@ public class Widget extends AppWidgetProvider {
 
         Toast.makeText(context.getApplicationContext(), "minW = "+minWidth + "minH = " + minHeight + "maxW = " + maxWidth + "maxW = " + maxHeight, Toast.LENGTH_LONG ).show();
 
-        if(minHeight > 200)
+        if(minHeight > 300)
         {
             Toast.makeText(context.getApplicationContext() , "making text visible 1" , Toast.LENGTH_LONG).show();
             views.setViewVisibility(R.id.appwidget_text, View.VISIBLE);
@@ -64,7 +64,7 @@ public class Widget extends AppWidgetProvider {
             views.setViewVisibility(R.id.appwidget_text4, View.VISIBLE);
             views.setViewVisibility(R.id.appwidget_text5, View.VISIBLE);
         }
-        else if(minHeight > 100  && minHeight < 200)
+        else if(minHeight > 280  && minHeight < 300)
         {
             Toast.makeText(context.getApplicationContext() , "making text visible 2" , Toast.LENGTH_LONG).show();
             views.setViewVisibility(R.id.appwidget_text, View.VISIBLE);
@@ -72,7 +72,7 @@ public class Widget extends AppWidgetProvider {
             views.setViewVisibility(R.id.appwidget_text3, View.VISIBLE);
             views.setViewVisibility(R.id.appwidget_text4, View.GONE);
             views.setViewVisibility(R.id.appwidget_text5, View.GONE);
-        }else if(minHeight > 10  && minHeight < 100)
+        }else if(minHeight > 200  && minHeight < 250)
         {
             Toast.makeText(context.getApplicationContext() , "making text visible 3" , Toast.LENGTH_LONG).show();
             views.setViewVisibility(R.id.appwidget_text, View.VISIBLE);
